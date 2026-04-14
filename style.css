@@ -1,0 +1,408 @@
+body {
+    font-family: Georgia, serif;
+    background-color: #eaf4f4;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #1a1a1a;
+}
+
+p {
+    line-height: 1.7;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ============================================
+   BARRA DE NAVEGACIÓN
+   ============================================ */
+
+.navbar {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+    font-size: 18px;
+}
+
+.logo {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.nav-links {    
+    display: flex;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    color: #cccccc;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: rgb(234, 6, 6);
+}
+
+
+/* ============================================
+   BOTONES (reutilizables en todas las páginas)
+   ============================================ */
+
+.boton {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.boton:hover {
+    transition: 0.5s;
+    background-color: #dc2222;
+    opacity: 0.85;
+}
+
+.boton-primario {
+    background-color: #0077cc;
+    color: white;
+}
+
+.boton-secundario {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+
+/* ============================================
+   HERO (sección principal de pagina.html)
+   ============================================ */
+
+.hero {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 80px;
+    height: 160px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 32px;
+}
+
+.hero-botones {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+
+/* ============================================
+   CARACTERÍSTICAS (pagina.html)
+   ============================================ */
+
+.caracteristicas {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 60px 40px;
+    flex-wrap: wrap;    
+}
+
+.tarjeta-feature {
+    background-color: white;
+    border-radius: 10px;
+    padding: 32px 24px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta-feature h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+
+/* ============================================
+   NOSOTROS (nosotros.html)
+   ============================================ */
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+    padding: 80px 60px;
+}
+
+.nosotros-texto {
+    flex: 1;            
+    min-width: 280px;
+}
+
+.nosotros-texto h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.nosotros-texto p {
+    font-size: 17px;
+    margin-bottom: 24px;
+}
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 28px;
+}
+
+.lista-beneficios li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.nosotros-imagen {
+    flex: 1;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+.nosotros-imagen img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 10px;
+}
+
+
+/* ============================================
+   CATÁLOGO DE PRODUCTOS (servicios.html)
+   ============================================ */
+
+.catalogo {
+    padding: 60px 40px;
+}
+
+.catalogo h2 {
+    font-size: 32px;
+    margin-bottom: 36px;
+}
+
+.grid-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    gap: 24px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;           
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 200px;
+    object-fit: fill;         
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.tarjeta img:hover {
+    transform: scale(1.08);
+}
+
+.tarjeta-info {
+    padding: 20px;
+    background-color: #f0fbfb;
+}
+
+.tarjeta-info h5 {
+    font-size: 17px;
+    margin: 0 0 10px 0;
+}
+
+.tarjeta-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 0;
+}
+
+
+/* ============================================
+   CONTACTO (contacto.html)
+   ============================================ */
+
+.contacto {
+    max-width: 700px;           
+    margin: 60px auto;
+    padding: 0 24px;
+}
+
+.contacto h2 {
+    font-size: 32px;
+    margin-bottom: 28px;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;     
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.formulario label {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: inherit;
+    background-color: white;
+    width: 100%;
+    box-sizing: border-box;     
+}
+
+.formulario textarea {
+    height: 130px;
+    resize: vertical;           
+}
+
+.formulario button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.formulario button:hover {
+    background-color: #ff0000;
+}
+
+.datos-contacto {
+    margin-bottom: 36px;
+}
+
+.datos-contacto p {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.mapa {
+    margin-bottom: 60px;
+}
+
+.mapa h3 {
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.mapa iframe {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+}
+
+
+/* ============================================
+   PIE DE PÁGINA (footer)
+   ============================================ */
+
+.footer {
+    background-color: #1a1a1a;
+    color: #cccccc;
+    padding: 48px 60px 24px;
+}
+
+.bi-instagram{
+    color: #0077cc  ;
+}
+
+.bi-facebook{
+    color: #0077cc ;
+}
+
+.bi-twitter-x{
+    color: #0077cc  ;
+}
+
+.bi-controller{
+    color: #dc2222;
+}
+
+.footer-columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.footer-columnas h5 {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 12px;
+}
+
+.footer-columnas p,
+.footer-columnas ul {
+    font-size: 15px;
+    color: #aaaaaa;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-columnas ul li {
+    margin-bottom: 6px;
+}
+
+.footer-columnas ul li a {
+    color: #aaaaaa;
+    transition: color 0.3s;
+}
+
+.footer hr {
+    border: none;
+    border-top: 1px solid #333;
+    margin: 0 0 20px;
+}
+
+.footer-creditos {
+    text-align: center;
+    font-size: 16px;
+    color: #888;
+}
